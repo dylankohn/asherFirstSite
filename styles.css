@@ -14,7 +14,7 @@ body {
     align-items: center; /* Vertically centers the child div */
     justify-content: center; /* Optionally centers horizontally as well */
     height: 98vh; /* Or a defined height for the container */
-    background-color: #43ffcd6c;
+    background-image: url('forest.jpg');
 }
 
 .main {
