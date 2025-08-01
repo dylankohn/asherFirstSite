@@ -1,0 +1,36 @@
+img {
+    width: 20%;
+    height: auto;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 90%;
+}
+
+body {
+    display: flex;
+    align-items: center; /* Vertically centers the child div */
+    justify-content: center; /* Optionally centers horizontally as well */
+    height: 98vh; /* Or a defined height for the container */
+    background-color: #43ffcd6c;
+}
+
+.main {
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #8f7cf9, #b1a4e5);
+    color: #333;
+    margin-bottom: 20px;
+    height: 90vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Adjust this value to control vertical spacing */
+    border: 1px #333 solid;
+    border-radius: 20px;
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+}
