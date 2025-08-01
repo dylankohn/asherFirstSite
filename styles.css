@@ -1,6 +1,8 @@
 img {
     width: 20%;
     height: auto;
+    max-width: 200px;
+    min-width: 120px;
 }
 
 html {
@@ -15,22 +17,187 @@ body {
     justify-content: center; /* Optionally centers horizontally as well */
     height: 98vh; /* Or a defined height for the container */
     background-image: url('forest.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .main {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #8f7cf9, #b1a4e5);
     color: #333;
-    margin-bottom: 20px;
-    height: 90vh;
+    margin: 20px;
+    height: auto;
+    min-height: 70vh;
     width: 30%;
+    max-width: 600px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 30px; /* Adjust this value to control vertical spacing */
+    gap: 20px;
     border: 1px #333 solid;
     border-radius: 20px;
     align-items: center; /* Center children horizontally */
     justify-content: center; /* Center children vertically */
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+li {
+    font-size: 1em;
+    list-style-position: inside;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Mobile Devices (320px - 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+        background-attachment: scroll;
+    }
+    
+    .main {
+        width: 90%;
+        min-width: 280px;
+        margin: 10px;
+        padding: 15px;
+        gap: 15px;
+        border-radius: 15px;
+        min-height: 60vh;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+    
+    li {
+        font-size: 0.9em;
+        padding: 5px 0;
+    }
+    
+    img {
+        width: 40%;
+        max-width: 150px;
+        min-width: 100px;
+    }
+}
+
+/* Small Mobile Devices (320px - 480px) */
+@media screen and (max-width: 480px) {
+    .main {
+        width: 95%;
+        padding: 12px;
+        gap: 12px;
+        margin: 5px;
+        border-radius: 12px;
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+    
+    p {
+        font-size: 0.95em;
+    }
+    
+    li {
+        font-size: 0.85em;
+        padding: 4px 0;
+    }
+    
+    img {
+        width: 50%;
+        max-width: 120px;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .main {
+        width: 50%;
+        padding: 25px;
+        gap: 25px;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1.2em;
+    }
+    
+    li {
+        font-size: 1.1em;
+    }
+    
+    img {
+        width: 25%;
+        max-width: 180px;
+    }
+}
+
+/* Large Screens (1024px+) */
+@media screen and (min-width: 1025px) {
+    .main {
+        width: 35%;
+        padding: 30px;
+        gap: 30px;
+    }
+    
+    h2 {
+        font-size: 2.2em;
+    }
+    
+    p {
+        font-size: 1.3em;
+    }
+    
+    li {
+        font-size: 1.2em;
+    }
+    
+    img {
+        width: 20%;
+        max-width: 220px;
+    }
+}
+
+/* Ultra-wide screens (1440px+) */
+@media screen and (min-width: 1440px) {
+    .main {
+        width: 30%;
+        max-width: 700px;
+        padding: 35px;
+        gap: 35px;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+    }
+    
+    p {
+        font-size: 1.4em;
+    }
+    
+    li {
+        font-size: 1.3em;
+    }
 }
